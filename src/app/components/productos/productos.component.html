@@ -1,0 +1,15 @@
+<div>
+  <div>Tipo: <select  [(ngModel)]="producto">
+    <option value="Sala">Sala</option>
+    <option value="Comedor">Comedor</option>
+    <option value="Sillon">Sillón</option>
+    <option value="Pergola">Pérgola</option>
+    <option value="Dormitorio">Dormitorio</option>
+
+  </select></div>
+  <div>Cantidad: <input type="number" [(ngModel)]="cantidad"></div>
+
+  <button (click)="agregarProducto()">Agregar</button>
+  <button (click)="eliminarProductos()">Resetear</button>
+</div>
+

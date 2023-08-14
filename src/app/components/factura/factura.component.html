@@ -1,0 +1,15 @@
+<div id="contenido" *ngIf="productos.length > 0" >
+  <table >
+    <thead>
+      <td>Producto</td>
+      <td>Cantidad </td>
+      <td>Total</td>
+    </thead>
+    <tr *ngFor="let operacion of productos">
+      <td>{{operacion.producto}}</td>
+      <td>{{operacion.cantidad}}</td>
+      <td>{{calcularTotal(operacion.total)}}</td>
+    </tr>
+  </table>
+  Total a Pagar: {{total}}
+</div>
