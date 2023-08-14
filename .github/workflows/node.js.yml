@@ -38,8 +38,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: <tofill>
-        release_name: <tofill>
+        tag_name: tarea7.${{ github.sha }}
+        release_name: Tarea 7 Cloud ${{ github.sha }}
         draft: true
         prerelease: false
 
